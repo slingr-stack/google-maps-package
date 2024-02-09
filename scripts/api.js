@@ -261,7 +261,7 @@ function setApiUri(options) {
 
 function setRequestHeaders(options) {
     let headers = options.headers || {};
-    headers = mergeJSON(headers, {"Authorization": "key" + config.get("apiKey")});
+    headers = mergeJSON(headers, {"key" : config.get("apiKey")});
     headers = mergeJSON(headers, {"Content-Type": "application/json"});
     options.headers = headers;
     return options;
