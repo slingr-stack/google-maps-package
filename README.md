@@ -10,12 +10,14 @@
     <tr>
         <td>Google Maps Package</td>
         <td>February 9, 2024</td>
-        <td>The Google Maps Package provides developers with powerful tools to integrate interactive mapping and location-based services into their applications. It offers features such as displaying maps, customizing map styles, geocoding addresses to coordinates, reverse geocoding coordinates to addresses, calculating routes and distances, and providing real-time traffic information. With robust documentation and a wide range of SDKs, the Google Maps Package enables developers to create engaging and user-friendly map-based experiences across various platforms and devices/td>
+        <td>Detailed description of the API of the Google Maps Package.</td>
     </tr>
     </tbody>
 </table>
 
 # Overview
+The Google Maps Package provides developers with powerful tools to integrate interactive mapping and location-based services into their applications. It offers features such as displaying maps, customizing map styles, geocoding addresses to coordinates, reverse geocoding coordinates to addresses, calculating routes and distances, and providing real-time traffic information. With robust documentation and a wide range of SDKs, the Google Maps Package enables developers to create engaging and user-friendly map-based experiences across various platforms and devices
+
 
 # Javascript API
 
