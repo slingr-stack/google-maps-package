@@ -8,9 +8,9 @@
     </thead>
     <tbody>
     <tr>
-        <td>Skeleton package</td>
-        <td>January 3, 2024</td>
-        <td>Detailed description of the API of the Skeleton package.</td>
+        <td>Google Maps Package</td>
+        <td>February 9, 2024</td>
+        <td>The Google Maps Package provides developers with powerful tools to integrate interactive mapping and location-based services into their applications. It offers features such as displaying maps, customizing map styles, geocoding addresses to coordinates, reverse geocoding coordinates to addresses, calculating routes and distances, and providing real-time traffic information. With robust documentation and a wide range of SDKs, the Google Maps Package enables developers to create engaging and user-friendly map-based experiences across various platforms and devices/td>
     </tr>
     </tbody>
 </table>
@@ -19,20 +19,16 @@
 
 # Javascript API
 
-The Javascript API of the skeleton package has two pieces:
+The Javascript API of the googlemaps package has two pieces:
 
 - **HTTP requests**
 - **Flow steps**
 
 ## HTTP requests
-You can make `GET`,`PUT`,`PATCH`,`DELETE` requests to the [skeleton API](API_URL_HERE) like this:
+You can make `GET`,`PUT`,`PATCH`,`DELETE` requests to the [googlemaps API](https://developers.google.com/maps/documentation) like this:
 ```javascript
-var response = pkg.skeleton.api.get('/path3')
-var response = pkg.skeleton.api.put('/path1/:testPath', body)
-var response = pkg.skeleton.api.put('/path1/:testPath')
-var response = pkg.skeleton.api.patch('/path2?param2=' + httpOptions.query.param2 + '&param3=' + httpOptions.query.param3 + '', body)
-var response = pkg.skeleton.api.patch('/path2?param2=' + httpOptions.query.param2 + '&param3=' + httpOptions.query.param3 + '')
-var response = pkg.skeleton.api.delete('/path4')
+var response = pkg.googlemaps.api.get('/maps/api/place/details/json?place_id=<string>')
+var response = pkg.googlemaps.api.post('/geolocation/v1/geolocate', body)
 ```
 
 Please take a look at the documentation of the [HTTP service](https://github.com/slingr-stack/http-service)
@@ -205,7 +201,6 @@ For more information about how shortcuts or flow steps work, and how they are ge
 
 ## Dependencies
 * HTTP Service (v1.3.7)
-* Oauth Package (v1.0.19) // TODO review and remove if its needed
 
 ## About SLINGR
 
