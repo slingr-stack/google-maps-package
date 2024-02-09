@@ -255,13 +255,13 @@ function setApiUri(options) {
     var API_URL = config.get("GOOGLE_MAPS_API_BASE_URL");
     let url = options.path || "";
     options.url = API_URL + url;
+    options.url = options.url.includes("?") ? options.url + "&key=" + config.get("apiKey") : options.url + "?key=" + config.get("apiKey");
     sys.logs.debug('[googlemaps] Set url: ' + options.path + "->" + options.url);
     return options;
 }
 
 function setRequestHeaders(options) {
     let headers = options.headers || {};
-    headers = mergeJSON(headers, {"key" : config.get("apiKey")});
     headers = mergeJSON(headers, {"Content-Type": "application/json"});
     options.headers = headers;
     return options;
